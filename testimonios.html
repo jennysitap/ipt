@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Testimonios IPT Arquitectos">
+  <title>Testimonios | IPT Arquitectos</title>
+  <link rel="icon" href="img/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.3rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #ffc107;
+    }
+    .feature i {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .contact-form input, 
+    .contact-form textarea {
+      margin-bottom: 10px;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #ffffff;
+      color: #000;
+    }
+    .navbar {
+      background-color: #ffffff !important;
+    }
+    .hero {
+      height: 60vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      position: relative;
+      background: url('img/sala.jpeg') center/cover no-repeat;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .btn-primary-custom {
+      background-color: #0d6efd;
+      color: #ffffff !important;
+      border: none;
+      padding: 10px 25px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary-custom:hover {
+      background-color: #0b5ed7;
+      color: #fff !important;
+      text-decoration: none;
+    }
+    .testimonial-card {
+      background-color: #222;
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="img/logo.png" width="40" class="me-2"> IPT | Arquitectos
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto fw-semibold">
+        <li class="nav-item"><a class="nav-link" href="ipt.html">Volver</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Testimonios</h1>
+    <p class="lead">La voz de quienes confiaron en nosotros</p>
+  </div>
+</header>
+
+<!-- Testimonios -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Lo que opinan nuestros clientes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>“Nos escuchó atentamente y transformó nuestras ideas en un diseño funcional y estéticamente agradable.”</p>
+          <p class="fw-bold mb-0">Familia Mendoza</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>“Fue una experiencia increíble. Su creatividad superó nuestras expectativas.”</p>
+          <p class="fw-bold mb-0">Alicia y Maximiliano</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>“Diseño innovador y funcional, siempre disponible para cualquier consulta.”</p>
+          <p class="fw-bold mb-0">Daniel Villa</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>“Excelente atención y compromiso. El resultado final fue mejor de lo que imaginamos.”</p>
+          <p class="fw-bold mb-0">Laura Ramírez</p>
+        </div>
+      </div>
+    </div>
+
+   <!-- Botón azul que abre el modal -->
+<div class="text-center mt-5">
+    <button type="button" class="btn btn-primary-custom px-4 py-2" data-bs-toggle="modal" data-bs-target="#agregarTestimonioModal">
+      Agregar Testimonio
+    </button>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="agregarTestimonioModal" tabindex="-1" aria-labelledby="agregarTestimonioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="agregarTestimonioLabel">Agregar Testimonio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formTestimonio" action="https://formspree.io/f/mgvebzel" method="POST">
+            <div class="mb-3">
+              <label for="nombreTestimonio" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombreTestimonio" name="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="textoTestimonio" class="form-label">Testimonio</label>
+              <textarea class="form-control" id="textoTestimonio" name="testimonio" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary-custom w-100">Enviar Testimonio</button>
+          </form>
+  
+          <!-- Mensaje de confirmación oculto -->
+          <div id="mensajeExito" class="alert alert-success mt-3 text-center" style="display:none;">
+            Enviado correctamente para su revisión.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const form = document.getElementById('formTestimonio');
+    const mensaje = document.getElementById('mensajeExito');
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita que recargue la página
+  
+      // Envía el formulario con fetch a Formspree
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          mensaje.style.display = 'block'; // Mostrar mensaje
+          form.reset(); // Limpiar formulario
+        } else {
+          alert('Ocurrió un error, inténtalo de nuevo.');
+        }
+      }).catch(error => {
+        alert('Ocurrió un error, inténtalo de nuevo.');
+      });
+    });
+  </script>
+  
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light text-center text-muted py-3 border-top">
+  <div class="container">
+    <p class="mb-0">© 2025 IPT | Arquitectos - Todos los derechos reservados</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
